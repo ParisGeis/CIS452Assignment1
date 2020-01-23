@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+ * Paris Geis
+ * ItemManager.cs
+ * Assignment 1
+ * MonoBehaviour class for testing other classes
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +16,7 @@ public class ItemManager : MonoBehaviour
 
     public void Start()
     {
+        //testing concrete classes
         Food hotdog = new Food("hot dog", 8);
         Book warAndPeace = new Book("War and Peace", "\"We can know only that we know nothing.\"", 1215);
 
@@ -21,6 +29,7 @@ public class ItemManager : MonoBehaviour
         warAndPeace.close();
         warAndPeace.close();
 
+        //instancing concrete classes for lists
         Food soup = new Food("bisque", 7);
         Food salad = new Food("Caesar salad", 6);
         Book lifeOfPi = new Book("Life of Pi",
@@ -29,12 +38,14 @@ public class ItemManager : MonoBehaviour
             "that one can see rightly...\"", 128);
         Potion mediumPotion = new Potion("Mysterious Vial", 2);
 
+        //polymorphic list of type Item (abstract class)
         itemList.Add(soup);
         itemList.Add(salad);
         itemList.Add(lifeOfPi);
         itemList.Add(littlePrince);
         itemList.Add(mediumPotion);
 
+        //polymorphic list of type Consumable (interface)
         consumeList.Add(soup);
         consumeList.Add(salad);
         consumeList.Add(mediumPotion);

@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿/*
+ * Paris Geis
+ * HealthIncrease.cs
+ * Assignment 1
+ * Interface for Food.cs and Book.cs
+ */
 
 public interface HealthIncrease
 {

@@ -1,4 +1,11 @@
-﻿abstract public class Item
+﻿/*
+ * Paris Geis
+ * Item.cs
+ * Assignment 1
+ * Abstract class from which Book, Food, and Potion are derived
+ */
+
+abstract public class Item
 {
     private string name;
     private double weight;

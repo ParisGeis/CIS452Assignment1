@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*
+ * Paris Geis
+ * Book.cs
+ * Assignment 1
+ * Concrete class for ItemManager.cs
+ */
+
+using UnityEngine;
 
 public class Book : Item, StatIncrease, HealthIncrease
 {
@@ -15,6 +22,7 @@ public class Book : Item, StatIncrease, HealthIncrease
 
     public override void use()
     {
+        //if the book is open, read it
         if (isOpen)
         {
             Debug.Log(text);
@@ -23,6 +31,7 @@ public class Book : Item, StatIncrease, HealthIncrease
             boostHealth(10);
             regenerate(5);
         }
+        //otherwise, let player know the book is closed
         else
         {
             Debug.Log("The book is closed");

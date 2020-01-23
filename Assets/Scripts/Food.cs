@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*
+ * Paris Geis
+ * Food.cs
+ * Assignment 1
+ * Concrete class for ItemManager.cs
+ */
+
+using UnityEngine;
 
 public class Food : Item, Consumable, HealthIncrease
 {
@@ -19,12 +26,14 @@ public class Food : Item, Consumable, HealthIncrease
         regenerate(10);
     }
 
+    //return tastiness value
     public int taste()
     {
         Debug.Log("This " + getName() + " tastes like a " + tastiness + " out of 10");
         return tastiness;
     }
 
+    //return spoiled
     public bool checkIfSpoiled()
     {
         Debug.Log("Is this " + getName() + " spoiled? " + spoiled);

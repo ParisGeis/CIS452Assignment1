@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*
+ * Paris Geis
+ * Potion.cs
+ * Assignment 1
+ * Concrete class for ItemManager.cs
+ */
+
+using UnityEngine;
 
 public class Potion : Item, Consumable, StatIncrease
 {

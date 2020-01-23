@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿/*
+ * Paris Geis
+ * StatIncrease.cs
+ * Assignment 1
+ * Interface for Book.cs and Potion.cs
+ */
 
 public interface StatIncrease
 {
